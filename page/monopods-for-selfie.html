@@ -14,7 +14,7 @@
         <!---->
         <div class="header-topline">
           <div class="header-topline__search">
-            <form class="search-form" action="URL" novalidate="">
+            <form class="search-form" action="url" novalidate="">
               <div class="search-form__inner">
                 <div class="search-form__input-wrapper">
                   <img src="https://via.placeholder.com/16x16" alt="search" width="16" height="16"><!--фоновая картинка search-form__input--><!--SVG-->
@@ -98,7 +98,7 @@
 
     <main>
         <div class="wrapper">
-          <h1>Моноподы для селфи</h1>
+          <h2>Моноподы для селфи</h2>
           <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
               <a href="main.html" class="breadcrumbs__link" title="DEVICE">
@@ -122,12 +122,27 @@
           <!---->
           <div class="catalog">
             <div class="wrapper">
-              <div class="catalog-settings"></div><!--фильтры-пока делать не нужно-->
+              <div class="catalog-settings">
+                <ul class="sorting">
+                  <li>сортировка:</li>
+                  <li>По цене</li>
+                  <li>По типу</li>
+                  <li>По популярности</li>
+                </ul>
+                <span></span><!--стрелка вверх-->
+                <span></span><!--стрелка вниз-->
+              </div>
               <!---->
               <aside class="sidebar">
                 <form class="sidebar__form" action="url">
+                  <p>фильтр:</p>
                   <fieldset class="sidebar__form-block">
-                    <!--стоимость, пока не делать-->
+                    <span>Стоимость</span>
+                    <range-slider>
+                      <div class="range-slider-wrapper">
+                        <span></span><!--зеленая линия-->
+                      </div>
+                    </range-slider>
                   </fieldset>
                   <!---->
                   <fieldset class="sidebar__form-block">
@@ -234,6 +249,22 @@
                     </div>
                   </li>
                 </ul>
+                <!---->
+                <div class="pagination">
+                  <a href="" class="pagination__direction">назад</a>
+                  <ol class="pagination__list">
+                    <li class="pagination__item">
+                      <a href="" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a href="" class="pagination__link">2</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a href="" class="pagination__link">3</a>
+                    </li>
+                  </ol>
+                  <a href="" class="pagination__direction">вперед</a>
+                </div>
               </section>
             </div>
           </div>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="wrapper">
+        <a aria-label="DEVISE" >
+          <img src="https://via.placeholder.com/163x35" alt="logo" class="header-logo" width="163" height="35"><!--SVG-->
+        </a>
+        <!---->
+        <div class="header-topline">
+          <div class="header-topline__search">
+            <form class="search-form" action="url" novalidate="">
+              <div class="search-form__inner">
+                <div class="search-form__input-wrapper">
+                  <img src="https://via.placeholder.com/16x16" alt="search" width="16" height="16"><!--фоновая картинка search-form__input--><!--SVG-->
+                  <input class="search-form__input" name="search" type="text" placeholder="Поиск по сайту">
+                </div>
+              </div>
+              <button class="search-form__button" type="submit"></button>
+            </form>
+          </div>
+          <!---->
+          <ul class="header-actions">
+            <li class="header-actions__item">
+              <div class="user">
+                <img class="user-icon" src="https://via.placeholder.com/13x14" alt="user-icon" width="13" height="14"><!--SVG-->
+                <a class="user-link" href="#">Войти</a>
+              </div>
+            </li>
+             <!---->
+            <li class="header-actions__item">
+              <div class="comparison">
+                <img  class="comparison-icon" src="https://via.placeholder.com/14x14" alt="comparison-icon" width="14" height="14"><!--SVG-->
+                <a class="comparison-link" href="#">Сравнить</a>
+              </div>
+            </li>
+             <!---->
+            <li class="header-actions__item">
+              <div class="basket">
+                <img  class="basket-icon" src="https://via.placeholder.com/14x14" alt="basket-icon" width="14" height="14"><!--SVG-->
+                <a class="basket-link" href="#">Сравнить</a>
+              </div>
+            </li>
+          </ul>
+          <!---->
+          <div>
+            <img class="header-topline__basket" src="https://via.placeholder.com/10x10" alt="basket" width="10" height="10"><!--SVG-->
+            <a class="header-topline__basket-link" href="#">Корзина</a>
+          </div>
+        </div>
+        <!---->
+        <div class="header-bottomline">
+          <div class="bottom-line__menu-outer">
+            <button class="menu-toggler" aria-label="Каталог товаров" type="button">
+              <span class="menu-toggler__text">каталог товаров</span>
+              <img src="https://via.placeholder.com/22x22" alt="menu-toggler__icon" class="menu-toggler__icon" width="22" height="22"> <!--SVG-->
+            </button>
+            <!---->
+            <fat-menu>
+              <div class="menu-wrapper">
+                <ul class="menu-categories">
+                  <li class="menu-categories__item">
+                    <a href="virtual-reality.html" class="menu-categories__link">Виртуальная реальность</a>
+                  </li>
+                  <li class="menu-categories__item">
+                    <a href="monopods-for-selfie.html" class="menu-categories__link">Моноподы для селфи</a>
+                  </li>
+                  <li class="menu-categories__item">
+                    <a href="action-cameras.html" class="menu-categories__link">Экшн-камеры</a>
+                  </li>
+                  <li class="menu-categories__item">
+                    <a href="fitness-bracelets.html" class="menu-categories__link">Фитнес-браслеты</a>
+                  </li>
+                  <li class="menu-categories__item">
+                    <a href="smart-watch.html" class="menu-categories__link">Умные часы</a>
+                  </li>
+                  <li class="menu-categories__item">
+                    <a href="quadcopter.html" class="menu-categories__link">Квадрокоптер</a>
+                  </li>
+                </ul>
+              </div>
+            </fat-menu>
+          </div>
+          <!---->
+            <ul class="bottom-line__links">
+              <li class="bottom-line__links-item"><a href="#">доставка</a></li>
+              <li class="bottom-line__links-item"><a href="#">гарантия</a></li>
+              <li class="bottom-line__links-item"><a href="#">контакты</a></li>
+            </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-slider">
+        <input checked type="radio" name="main-slider__respond" id="main-slider__desktop">
+        <div id="main-slider__slider-container">
+            <input checked type="radio" name="main-slider__slider" id="main-slider__switch1">
+            <input type="radio" name="main-slider__slider" id="main-slider__switch2">
+            <input type="radio" name="main-slider__slider" id="main-slider__switch3">
+          <div class="main-slides">
+            <div class="main-slides__overflow">
+              <article class="main-slides__content">
+                <img src="https://via.placeholder.com/384x486" alt="slides-content-img" class="slides-content-img1" width="384"  height="486">
+                <h1>01</h1>
+                <h2>Делай селфи, как Бен Стиллер! </h2>
+                <span class="slides-content-line"></span>
+                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a href="#" class="slides-content-link">подробнее</a>
+                <img src="https://via.placeholder.com/12x12" alt="slides-content-radio" class="slides-content-radio" width="12"  height="12"><!--SVG-->
+                <img src="https://via.placeholder.com/12x12" alt="slides-content-radio" class="slides-content-radio" width="12"  height="12"><!--SVG-->
+                <img src="https://via.placeholder.com/12x12" alt="slides-content-radio" class="slides-content-radio" width="12"  height="12"><!--SVG-->
+                <table class="slides-content-table">
+                  <tr>
+                    <th>8,5 м</th>
+                    <th>5 кг</th>
+                    <th>Карбон</th>
+                  </tr>
+                  <tr>
+                    <td>Длина палки</td>
+                    <td>Вес палки</td>
+                    <td>Материал</td>
+                  </tr>
+                </table>
+              </article>
+              <!---->
+              <article class="main-slides__content">
+                <img src="https://via.placeholder.com/345x485" alt="slides-content-img" class="slides-content-img3" width="526"  height="334">
+                <h1>02</h1>
+                <h2>Худеем правильно!</h2>
+                <span class="slides-content-line"></span>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a href="#" class="slides-content-link">подробнее</a>
+                <img src="https://via.placeholder.com/12x12" alt="slides-content-radio" class="slides-content-radio" width="12"  height="12"><!--SVG-->
+                <img src="https://via.placeholder.com/12x12" alt="slides-content-radio" class="slides-content-radio" width="12"  height="12"><!--SVG-->
+                <img src="https://via.placeholder.com/12x12" alt="slides-content-radio" class="slides-content-radio" width="12"  height="12"><!--SVG-->
+                <table class="slides-content-table">
+                  <tr>
+                    <th>48 часов</th>
+                  </tr>
+                  <tr>
+                    <td>Без подзарядки</td>
+                  </tr>
+                </table>
+              </article>
+              <!---->
+              <article class="main-slides__content">
+                <img src="https://via.placeholder.com/526x334" alt="slides-content-img" class="slides-content-img3" width="526"  height="334">
+                <h1>03</h1>
+                <h2>Порхает как бабочка, жалит как пчела!</h2>
+                <span class="slides-content-line"></span>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a href="#" class="slides-content-link">подробнее</a>
+                <img src="https://via.placeholder.com/12x12" alt="slides-content-radio" class="slides-content-radio" width="12"  height="12"><!--SVG-->
+                <img src="https://via.placeholder.com/12x12" alt="slides-content-radio" class="slides-content-radio" width="12"  height="12"><!--SVG-->
+                <img src="https://via.placeholder.com/12x12" alt="slides-content-radio" class="slides-content-radio" width="12"  height="12"><!--SVG-->
+                <table class="slides-content-table">
+                  <tr>
+                    <th>800 м</th>
+                    <th>50 м</th>
+                  </tr>
+                  <tr>
+                    <td>Дальность полета</td>
+                    <td>Радиус поражения</td>
+                  </tr>
+                </table>
+              </article>
+            </div>
+          </div>
+          <div class="main-slider__active">
+            <label for="main-slider__switch2"></label>
+            <label for="main-slider__switch2"></label>
+            <label for="main-slider__switch3"></label>
+          </div>
+        </div>
+      </section>
+      <!---->
+      <section class="catalog-menu">
+        <div class="wrapper">
+          <ul class="menu-categories">
+            <li class="menu-categories__item">
+              <div class="menu-categories__image-wrapper">
+                <img src="https://via.placeholder.com/97x55" alt="virtual-reality" class="virtual-reality-icon" width="97" height="55"> <!--SVG-->
+              </div>
+              <a href="virtual-reality.html" class="menu-categories__link">Виртуальная реальность</a>
+            </li>
+            <li class="menu-categories__item">
+              <div class="menu-categories__image-wrapper">
+                <img src="https://via.placeholder.com/86x17" alt="monopods-for-selfie" class="monopods-for-selfie-icon" width="86" height="17"> <!--SVG-->
+              </div>
+              <a href="monopods-for-selfie.html" class="menu-categories__link">Моноподы для селфи</a>
+            </li>
+            <li class="menu-categories__item">
+              <div class="menu-categories__image-wrapper">
+                <img src="https://via.placeholder.com/71x87" alt="action-cameras" class="action-cameras-icon" width="71" height="87"> <!--SVG-->
+              </div>
+              <a href="action-cameras.html" class="menu-categories__link">Экшн-камеры</a>
+            </li>
+            <li class="menu-categories__item">
+              <div class="menu-categories__image-wrapper">
+                <img src="https://via.placeholder.com/107x65" alt="fitness-bracelets" class="fitness-bracelets-icon" width="107" height="65"> <!--SVG-->
+              </div>
+              <a href="fitness-bracelets.html" class="menu-categories__link">Фитнес-браслеты</a>
+            </li>
+            <li class="menu-categories__item">
+              <div class="menu-categories__image-wrapper">
+                <img src="https://via.placeholder.com/56x98" alt="smart-watch" class="mart-watch-icon" width="56" height="98"> <!--SVG-->
+              </div>
+              <a href="smart-watch.html" class="menu-categories__link">Умные часы</a>
+            </li>
+            <li class="menu-categories__item">
+              <div class="menu-categories__image-wrapper">
+                <img src="https://via.placeholder.com/132x69" alt="quadcopters" class="quadcopters-icon" width="132" height="69"> <!--SVG-->
+              </div>
+              <a href="quadcopter.html" class="menu-categories__link">Квадрокоптер</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!---->
+      <section class="services-slider">
+        <div class="wrapper">
+          <input checked type="radio" name="services-slider__respond" id="services-slider__desktop">
+          <div id="services-slider__slider-container">
+              <input checked type="radio" name="services-slider__slider" id="services-slider__switch1">
+              <input type="radio" name="services-slider__slider" id="services-slider__switch2">
+              <input type="radio" name="services-slider__slider" id="services-slider__switch3">
+            <div class="services-slides">
+              <div class="services-slides__overflow">
+                <article class="services-slides__content">
+                  <div class="delivery-box">
+                    <h2>Доставка</h2>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  </div>
+                  <img src="https://via.placeholder.com/136x164" alt="delivery" class="delivery-img" width="136"  height="164"><!--SVG-->
+                </article>
+                <!---->
+                <article class="services-slides__content">
+                  <div class="guarantee-box">
+                    <h2>Гарантия</h2>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  </div>
+                  <img src="https://via.placeholder.com/136x164" alt="guarantee" class="guarantee-img" width="136"  height="164"><!--SVG-->
+                </article>
+                <!---->
+                <article class="services-slides__content">
+                  <div class="credit-box">
+                    <h2>Кредит</h2>
+                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                  </div>
+                  <img src="https://via.placeholder.com/136x164" alt="credit" class="credit-img" width="136"  height="164"><!--SVG--><!--Указать правильный размер картинки-->
+                </article>
+              </div>
+            </div>
+            <div class="services-slider__controls">
+              <label for="services-slider__switch2">
+                <a href="#" class="" aria-label="доставка">доставка</a>
+              </label>
+              <label for="services-slider__switch2">
+                <a href="#" class="" aria-label="гарантия">гарантия</a>
+              </label>
+              <label for="services-slider__switch3">
+                <a href="#" class="" aria-label="кредит">кредит</a>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---->
+      <section class="partners">
+        <div class="wrapper">
+          <img src="https://via.placeholder.com/260x100" alt="partners-icon" class="partners-icon" width="260" height="100"><!--SVG-->
+          <img src="https://via.placeholder.com/260x100" alt="partners-icon" class="partners-icon" width="260" height="100"><!--SVG-->
+          <img src="https://via.placeholder.com/260x100" alt="partners-icon" class="partners-icon" width="260" height="100"><!--SVG-->
+          <img src="https://via.placeholder.com/260x100" alt="partners-icon" class="partners-icon" width="260" height="100"><!--SVG-->
+        </div>
+      </section>
+      <!---->
+      <section class="info">
+        <div class="wrapper">
+          <article class="about-us">
+            <span class="about-us__line"></span>
+            <h2>О нас</h2>
+            <p>Огромный выбор гаджетов не оставит равнодушным гика,
+              который есть в каждом из нас.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки
+              России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="about-us__link">
+              <li class="about-us__link-item">
+                <img src="https://via.placeholder.com/8x8" alt="circle" width="8" height="8"><!--SVG-circle:before-->
+                <p>Деловые линии</p>
+              </li>
+              <li class="about-us__link-item">
+                <img src="https://via.placeholder.com/8x8" alt="circle" width="8" height="8"><!--SVG-circle:before-->
+                <p>Автотрейдинг</p>
+              </li>
+              <li class="about-us__link-item">
+                <img src="https://via.placeholder.com/8x8" alt="circle" width="8" height="8"><!--SVG-circle:before-->
+                <p>ЖелДорЭкспедиция</p>
+              </li>
+            </ul>
+            <a href="#" class="" aria-label="Подробнее о нас">подробнее о нас</a>
+          </article>
+          <article  class="contacs">
+            <span class="about-us__line"></span>
+            <h2>Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+              проверить работоспособность покупки. Всякое бывает.</p>
+            <a href=""><!--Адрес сервис карт-->
+              <img src="https://via.placeholder.com/560x222" alt="map" width="560" height="222"> <!--iframe-->
+            </a>
+            <a href="#" class="" aria-label="Напишите нам">напишите нам</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-topline">
+          <a href="" aria-label="DEVISE" >
+            <img src="https://via.placeholder.com/163x35" alt="logo" class="footer-logo" width="163" height="35"><!--SVG-->
+          </a>
+          <!---->
+          <ul class="footer-actions">
+            <li class="footer-actions__item">
+              <div class="user">
+                <img class="user-icon" src="https://via.placeholder.com/13x14" alt="user-icon" width="13" height="14"><!--SVG-->
+                <a class="user-link" href="#">Войти</a>
+              </div>
+            </li>
+             <!---->
+            <li class="footer-actions__item">
+              <div class="comparison">
+                <img  class="comparison-icon" src="https://via.placeholder.com/14x14" alt="comparison-icon" width="14" height="14"><!--SVG-->
+                <a class="comparison-link" href="#">Сравнить</a>
+              </div>
+            </li>
+             <!---->
+            <li class="footer-actions__item">
+              <div class="basket">
+                <img  class="basket-icon" src="https://via.placeholder.com/14x14" alt="basket-icon" width="14" height="14"><!--SVG-->
+                <a class="basket-link" href="#">Сравнить</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!---->
+        <div class="footer-midline">
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-midline__links">
+            <li class="footer-midline__links-item"><a href="#">доставка</a></li>
+            <li class="footer-midline__links-item"><a href="#">гарантия</a></li>
+            <li class="footer-midline__links-item"><a href="#">контакты</a></li>
+          </ul>
+          <p>Тел.:<a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+        </div>
+        <!---->
+        <div class="footer-bottomline">
+          <img class="footer-bottomline__line" src="https://via.placeholder.com/80x7" alt="footer-bottomline__line" width="80" height="7"><!--SVG--><!--я не понял что это(просто декоративная линия?)-->
+          <!---->
+          <ul class="footer-social">
+            <li class="footer-social__item">
+              <a href="https://www.facebook.com" class="footer-social__link" aria-label="Facebook" title="Facebook">
+                <img src="https://via.placeholder.com/32x32" alt="icon-facebook" width="32" height="32"><!--SVG-->
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="https://instagram.com" class="footer-social__link" aria-label="Instagram" title="Instagram">
+                <img src="https://via.placeholder.com/32x32" alt="icon-instagram" width="32" height="32"><!--SVG-->
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="https://twitter.com" class="footer-social__link" aria-label="Twitter" title="Twitter">
+                <img src="https://via.placeholder.com/32x32" alt="icon-twitter" width="32" height="32"><!--SVG-->
+              </a>
+            </li>
+          </ul>
+          <!---->
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-bottomline__link" aria-label="htmlacademy" title="htmlacademy">
+            <img src="https://via.placeholder.com/27x34" alt="icon-htmlacademy" width="27" height="34"><!--SVG-->
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

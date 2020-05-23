@@ -34,7 +34,7 @@
                       </symbol>
                     </use>
                   </svg>
-                  <input class="search-form__input" name="search" type="text" placeholder="Поиск по сайту">
+                  <input class="search-form__input visually-hidden" name="search" type="text" placeholder="Поиск по сайту">
                 </div>
               </div>
               <button class="search-form__button" type="submit">найти</button>
@@ -108,7 +108,7 @@
                 </symbol>
               </use>
             </svg>
-            <ul class="menu-list">
+            <ul class="menu-list visually-hidden">
               <li class="menu-categories__item">
                 <a href="#" class="menu-categories__link">Виртуальная реальность</a>
               </li>
@@ -190,7 +190,7 @@
                 </table>
               </article>
               <!---->
-              <article class="main-slides__content">
+              <article class="main-slides__content visually-hidden">
                 <img src="img/main-slider2.png" alt="Мотивирующие фитнес-браслеты" width="345"  height="485">
                 <h1>02</h1>
                 <h2>Худеем правильно!</h2>
@@ -207,7 +207,7 @@
                 </table>
               </article>
               <!---->
-              <article class="main-slides__content">
+              <article class="main-slides__content visually-hidden">
                 <img src="img/main-slider3.png" alt="Квадрокоптер оснащенный мощным лазером" width="526"  height="334">
                 <h1>03</h1>
                 <h2>Порхает как бабочка, жалит как пчела!</h2>
@@ -402,7 +402,7 @@
                   </svg>
                 </article>
                 <!---->
-                <article class="services-slides__content">
+                <article class="services-slides__content visually-hidden">
                   <div class="guarantee-box">
                     <h2>Гарантия</h2>
                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -434,7 +434,7 @@
                   </svg>
                 </article>
                 <!---->
-                <article class="services-slides__content">
+                <article class="services-slides__content visually-hidden">
                   <div class="credit-box">
                     <h2>Кредит</h2>
                     <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -524,10 +524,38 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.</p>
-          <a href=""><!--Адрес сервис карт-->
+          <a href="">
             <img src="img/map.png" alt="Адрес на карте - улица Строителей, 15" width="560" height="222">
           </a>
+          <!--Попап карта-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.0961994398845!2d37.526882144921466!3d55.6873152347797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1590257273073!5m2!1sru!2sua"
+          class="visually-hidden" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+          </iframe>
           <a href="#" class="" aria-label="Напишите нам">напишите нам</a>
+          <!--Попап форма-->
+          <form class="form-popap visually-hidden" novalidate>
+            <div class="form-wrapper">
+                <label for="popap-user-name">Ваше имя:
+                  <input type="text" name="popap-user-name" id="popap-user-name" placeholder="Имя Фамилия" maxlength="30" required>
+                </label>
+                <label for="popap-user-email">Ваш e-mail:
+                  <input type="email" name="popap-user-email" id="popap-user-email" placeholder="email@example.com" maxlength="30" required>
+                </label>
+                <label for="popap-user-text">Текст письма:
+                  <textarea id="popap-user-text" name="popap-user-text" rows="5" maxlength="150" placeholder="В свободной форме" required></textarea>
+                </label>
+                <button class="" type="submit">отправить</button>
+                <svg width="55" height="55" fill="none">
+                  <use xlink:href="#icon-button-close">
+                    <symbol id="icon-button-close" viewBox="0 0 55 55">
+                      <circle opacity=".5" cx="27.5" cy="27.5" r="27.5" fill="#F7E296"/>
+                      <path d="M35.95 37.725L28 29.762l-7.95 7.963-1.775-1.775L26.237 28l-7.962-7.95 1.775-1.775L28 26.238l7.95-7.95 1.762 1.762-7.95 7.95 7.95 7.95-1.762 1.775z"
+                      fill="#fff" opacity=".7"/>
+                    </symbol>
+                  </use>
+                </svg>
+            </div>
+          </form>
         </div>
       </section>
     </main>

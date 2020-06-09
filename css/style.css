@@ -72,8 +72,16 @@
   height: 100%
 }
 
+.monopods-for-selfie-page {
+  height: 100%
+}
+
 .body {
   min-width: 1440px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;

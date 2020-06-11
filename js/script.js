@@ -33,10 +33,10 @@ servicesControls.addEventListener('click', function (evt) {
 
 var linkForm = document.querySelector('.feedback-button');
 var linkMap = document.querySelector('.map');
-var modalForm = document.querySelector('.modal__feedback');
-var modalMap = document.querySelector('.modal__map');
-var formClose = modalForm.querySelector('.modal__close');
-var mapClose = modalMap.querySelector('.modal__close');
+var modalForm = document.querySelector('.modal-feedback');
+var modalMap = document.querySelector('.modal-map');
+var formClose = modalForm.querySelector('.modal-close');
+var mapClose = modalMap.querySelector('.modal-close');
 
 linkForm.addEventListener('click', function (evt) {
   evt.preventDefault();

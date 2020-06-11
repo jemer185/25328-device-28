@@ -6,8 +6,10 @@
     <meta name="description" content="Гаджеты и аксессуары в интернет-магазине DEVICE, лучшие цены, доставка по Украине и России, официальная гарантия!">
     <meta name="keywords" content="гаджеты и аксессуары, девайс, devise">
     <title>Интернет-магазин Девайс</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body">
       <!--===Заголовок===-->
@@ -15,13 +17,11 @@
         <div class="containers">
           <h1 class="visually-hidden">DEVISE - Интернет-магазин гаджетов и аксессуаров</h1>
           <!--Логотип сайта-->
-          <a class="header__link" aria-label="Логотип DEVISE">
-            <svg class="icon-logo" width="163" height="35" role="img" viewBox="0 0 163 35" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon-mainlogo" width="163" height="35" role="img" viewBox="0 0 163 35" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип DEVISE">
               <g id="icon-logo">
                 <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
               </g>
             </svg>
-          </a>
           <!--Навигация-->
           <nav>
             <!--Навигация пользователя-->
@@ -30,7 +30,7 @@
                 <!--Форма поиска-->
                 <form class="user-nav__search" action="https://echo.htmlacademy.ru" method="post" target="_blank">
                   <input class="user-nav__search-field" type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-                  <input class="user-nav__search-button" type="submit" aria-label="Кнопка поиска" value="Найти">
+                  <button class="user-nav__search-button" type="submit" aria-label="Кнопка поиска">найти</button>
                 </form>
               </li>
               <li class="user-nav__item">
@@ -65,23 +65,40 @@
             <!--Навигация по сайту-->
             <ul class="site-nav">
               <li class="site-nav__item site-nav__item-catalog">
-
-                <a class="site-nav__link site-nav__link-catalog site-nav__link-letter-spacing" href="#" aria-label="Каталог товаров">Каталог товаров</a>
-                <button class="catalog-button"></button>
-                  <ul class="site-nav__sublist">
-                    <li class="site-nav__sublist-item">
-                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - виртуальная реальность">Виртуальная реальность</a>
-                      <a class="site-nav__sublist-link" href="monopods-for-selfie.html" aria-label="Раздел - моноподы для селфи">Моноподы для селфи</a>
-                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - экшн-камеры">Экшн-камеры</a>
-                    </li>
-                    <li class="site-nav__sublist-item">
-                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - фитнес-браслеты">Фитнес-браслеты</a>
-                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - умные часы">Умные часы</a>
-                    </li>
-                    <li class="site-nav__sublist-item">
-                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - квадрокоптеры">Квадрокоптеры</a>
-                    </li>
-                  </ul>
+                <a class="site-nav__link site-nav__link-catalog site-nav__link-letter-spacing" href="#" aria-label="Каталог товаров с кнопкой вызова подменю">Каталог товаров</a>
+                <button class="catalog-button" type="button" aria-label="Кнопка вызова подменю"></button>
+                <ul class="site-nav__sublist">
+                  <li  class="site-nav__sublist-item">
+                    <ul>
+                      <li>
+                        <a class="site-nav__sublist-link" href="#" aria-label="Раздел - виртуальная реальность">Виртуальная реальность</a>
+                      </li>
+                      <li>
+                        <a class="site-nav__sublist-link" href="monopods-for-selfie.html" aria-label="Раздел - моноподы для селфи">Моноподы для селфи</a>
+                      </li>
+                      <li>
+                        <a class="site-nav__sublist-link" href="#" aria-label="Раздел - экшн-камеры">Экшн-камеры</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="site-nav__sublist-item">
+                    <ul>
+                      <li>
+                        <a class="site-nav__sublist-link" href="#" aria-label="Раздел - фитнес-браслеты">Фитнес-браслеты</a>
+                      </li>
+                      <li>
+                        <a class="site-nav__sublist-link" href="#" aria-label="Раздел - умные часы">Умные часы</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="site-nav__sublist-item">
+                    <ul>
+                      <li>
+                        <a class="site-nav__sublist-link" href="#" aria-label="Раздел - квадрокоптеры">Квадрокоптеры</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
               <li class="site-nav__item">
                 <a class="site-nav__link" href="#services" aria-label="Доставка товара">Доставка</a>
@@ -110,7 +127,7 @@
               <!--Слайд 1-->
               <li class="slider__item slider__item-1">
                 <div class="slider-picture slider-picture-1">
-                  <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+                  <img src="img/longest-selfie-stick.png" width="384" height="486" alt="Самая длинная палка для селфи">
                 </div>
                 <div class="slider__content">
                   <span class="number">01</span>
@@ -138,7 +155,7 @@
               <!--Слайд 2-->
               <li class="slider__item slider__item-2">
                 <div class="slider-picture slider-picture-2">
-                  <img src="img/slider-2.png" width="345" height="485" alt="Фитнес браслет">
+                  <img src="img/motivational-fitness-bracelets.png" width="345" height="485" alt="Фитнес браслет">
                 </div>
                 <div class="slider__content">
                   <span class="number">02</span>
@@ -158,7 +175,7 @@
               <!--Слайд 3-->
               <li class="slider__item slider__item-3">
                 <div class="slider-picture slider-picture-3">
-                  <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+                  <img src="img/quadrocopter.png" width="526" height="334" alt="Квадрокоптер">
                 </div>
                 <div class="slider__content">
                   <span class="number">03</span>
@@ -203,6 +220,7 @@
         </section>
         <!--===Каталог товаров===-->
         <section class="catalog-mainmenu">
+          <h2 class="visually-hidden">Основное меню категорий товаров на сайте</h2>
           <div class="container">
             <ul class="catalog-mainmenu__list">
               <!--Виртуальная реальность-->
@@ -213,8 +231,8 @@
                       <path d="M84.131 32.639V20.003c0-1.309 1.045-2.37 2.335-2.37l8.326 1.581V11.02c0-2.355-1.708-3.43-4.202-4.265L67.403.175c1.616 1.391 1.89 2.04 1.89 4.396V49.78c0 2.356-.45 4.066-1.968 5.21l23.265-7.065c2.401-.833 4.202-4.216 4.202-6.572V33.44l-8.326 1.567c-1.29.002-2.335-1.06-2.335-2.368z"/><path d="M95.129 20.979l-7.598-1.444c-1.008 0-1.824.829-1.824 1.851v9.868c0 1.023.816 1.852 1.824 1.852l7.598-1.431c1.154-.419 1.824-.829 1.824-1.852V22.83c0-1.022-.766-1.507-1.824-1.851zM67.17 4.483c0-5.08-4.232-4.459-4.232-4.459S5.832 4.738 2.838 5.145C-.156 5.552.001 9.532.001 9.532L0 45.812c0 3.743 2.599 3.753 2.599 3.753l16.477 1.403L27.212 39.3s1.109-1.828 2.505-1.828c1.397 0 2.432 1.861 2.432 1.861l9.061 13.521s18.895 1.909 22.521 1.909c3.626-.001 3.439-5.024 3.439-5.024V4.483zM12.982 37.192c-3.698 0-6.696-4.601-6.696-10.275s2.998-10.275 6.696-10.275c3.698 0 6.696 4.601 6.696 10.275s-2.998 10.275-6.696 10.275zm36.158 1.426c-4.662 0-8.44-5.239-8.44-11.701 0-6.463 3.779-11.702 8.44-11.702 4.662 0 8.442 5.239 8.442 11.702 0 6.462-3.78 11.701-8.442 11.701z"/>
                     </svg>
                   </div>
+                  <span class="catalog-mainmenu__name" href="#">Виртуальная реальность</span>
                 </a>
-                <a class="catalog-mainmenu__name" href="#">Виртуальная реальность</a>
               </li>
               <!--Моноподы для селфи-->
               <li class="catalog-mainmenu__item">
@@ -224,8 +242,8 @@
                         <path d="M82.821 4.011H3.33A3.188 3.188 0 00.142 7.199v46.413a3.187 3.187 0 003.188 3.189h79.492a3.188 3.188 0 003.189-3.189V7.199a3.189 3.189 0 00-3.19-3.188zM8.392 37.236h-.226a3.19 3.19 0 01-3.189-3.189v-7.283a3.188 3.188 0 013.189-3.188h.226v13.66zm61.231 15.172H13.341V8.402h56.282v44.006zM78.4 34.552a4.146 4.146 0 01-4.146-4.147 4.146 4.146 0 114.146 4.147zM54.654 0H31.497v2.758h23.157V0zM46.608 64.861v-2.973h8.046V59.13H31.498v2.758h8.045v35.246a6.068 6.068 0 00-3.635 5.559V117h14.335v-14.307a6.062 6.062 0 00-3.636-5.557v-27.99h4.796l5.05 1.213v-6.711l-5.05 1.213h-4.795z"/>
                       </svg>
                   </div>
+                  <span class="catalog-mainmenu__name" href="monopods-for-selfie.html">Моноподы для&nbsp;селфи</span><!--&nbsp; - костыль-->
                 </a>
-                <a class="catalog-mainmenu__name" href="monopods-for-selfie.html">Моноподы для&nbsp;селфи</a><!--&nbsp; - костыль-->
               </li>
               <!--Экшн-камеры-->
               <li class="catalog-mainmenu__item">
@@ -236,8 +254,8 @@
                       <path d="M47.762 43.964c6.731 0 12.188-5.475 12.188-12.229s-5.457-12.229-12.188-12.229c-6.731 0-12.188 5.475-12.188 12.229s5.457 12.229 12.188 12.229zM31.562 33.171a1.435 1.435 0 100-2.87 1.435 1.435 0 000 2.87zM63.963 33.171a1.435 1.435 0 100-2.87 1.435 1.435 0 000 2.87zM39.109 19.429a1.435 1.435 0 100-2.87 1.435 1.435 0 000 2.87zM56.415 46.912c.79 0 1.43-.643 1.43-1.436 0-.793-.64-1.436-1.43-1.436-.79 0-1.43.643-1.43 1.436 0 .793.64 1.436 1.43 1.436zM55.697 19a1.435 1.435 0 100-2.87 1.435 1.435 0 000 2.87zM39.828 47.341a1.435 1.435 0 100-2.87 1.435 1.435 0 000 2.87z"/>
                     </svg>
                   </div>
+                  <span class="catalog-mainmenu__name" href="#">Экшн-камеры</span>
                 </a>
-                <a class="catalog-mainmenu__name" href="#">Экшн-камеры</a>
               </li>
               <!--Фитнес-браслеты-->
               <li class="catalog-mainmenu__item">
@@ -248,8 +266,8 @@
                       <path d="M20.561 38.459h65.523c5.564 0 10.074-4.513 10.074-10.077V9.935c0-5.563-4.51-10.075-10.074-10.075H20.561c-5.564 0-10.075 4.511-10.075 10.075v18.447c0 5.564 4.511 10.077 10.075 10.077zM83.695 9.468a1.57 1.57 0 110 3.139 1.57 1.57 0 010-3.139zm0 4.039a1.569 1.569 0 110 3.138 1.569 1.569 0 010-3.138zm0 4.039a1.568 1.568 0 11.001 3.137 1.568 1.568 0 01-.001-3.137zm0 3.827a1.57 1.57 0 11-.001 3.14 1.57 1.57 0 01.001-3.14zm0 4.039a1.568 1.568 0 11.001 3.137 1.568 1.568 0 01-.001-3.137zM79.656 9.468c.867 0 1.568.703 1.568 1.57a1.568 1.568 0 11-3.136 0c0-.868.703-1.57 1.568-1.57zm0 15.944a1.568 1.568 0 110 3.135 1.568 1.568 0 010-3.135zM75.619 9.468a1.57 1.57 0 11-.003 3.14 1.57 1.57 0 01.003-3.14zm0 4.039a1.57 1.57 0 11-.003 3.139 1.57 1.57 0 01.003-3.139zm0 4.039a1.569 1.569 0 11-.002 3.138 1.569 1.569 0 01.002-3.138zm0 3.827a1.568 1.568 0 110 3.138 1.568 1.568 0 010-3.138zm0 4.039a1.569 1.569 0 11-.002 3.138 1.569 1.569 0 01.002-3.138zM67.965 9.468c.867 0 1.568.703 1.568 1.57a1.568 1.568 0 11-3.136 0 1.568 1.568 0 011.568-1.57zm0 8.078a1.568 1.568 0 110 3.14 1.568 1.568 0 010-3.14zm0 3.881a1.569 1.569 0 11-.002 3.136 1.569 1.569 0 01.002-3.136zm0 3.985a1.568 1.568 0 110 3.135 1.568 1.568 0 010-3.135zM63.926 9.468a1.57 1.57 0 110 3.14 1.57 1.57 0 010-3.14zm0 8.078a1.57 1.57 0 11.001 3.139 1.57 1.57 0 01-.001-3.139zm0 7.866a1.57 1.57 0 11.001 3.139 1.57 1.57 0 01-.001-3.139zM59.888 9.468a1.57 1.57 0 010 3.139 1.568 1.568 0 01-1.568-1.569 1.567 1.567 0 011.568-1.57zm0 4.039a1.57 1.57 0 11-.001 3.135 1.57 1.57 0 01.001-3.135zm0 4.039a1.57 1.57 0 11-.001 3.14 1.57 1.57 0 01.001-3.14zm0 7.866a1.57 1.57 0 010 3.137 1.569 1.569 0 010-3.137zm-8.29-15.944a1.57 1.57 0 110 3.139 1.57 1.57 0 010-3.139zm0 4.039a1.569 1.569 0 110 3.138 1.569 1.569 0 010-3.138zm0 4.039a1.568 1.568 0 11.001 3.137 1.568 1.568 0 01-.001-3.137zm0 3.881a1.568 1.568 0 110 3.137 1.569 1.569 0 010-3.137zm0 3.985a1.568 1.568 0 11.001 3.137 1.568 1.568 0 01-.001-3.137zm-4.039-11.905a1.568 1.568 0 110 3.136 1.568 1.568 0 010-3.136zm-8.502-.212a1.57 1.57 0 11-.001 3.135 1.57 1.57 0 01.001-3.135zm0 4.038a1.57 1.57 0 11-.003 3.141 1.57 1.57 0 01.003-3.141zm-4.039-8.078a1.57 1.57 0 11-.003 3.14 1.57 1.57 0 01.003-3.14zm0 4.04a1.57 1.57 0 11-.003 3.139 1.57 1.57 0 01.003-3.139zm0 4.038a1.57 1.57 0 11-.003 3.14 1.57 1.57 0 01.003-3.14zm0 4.04a1.569 1.569 0 11-.001 3.137 1.569 1.569 0 01.001-3.137zm-4.254-8.078a1.569 1.569 0 110 3.138 1.569 1.569 0 010-3.138zm0 4.038a1.57 1.57 0 110 3.139 1.57 1.57 0 010-3.139zm0 4.04a1.57 1.57 0 11-.001 3.14 1.57 1.57 0 01.001-3.14zm0 4.039a1.568 1.568 0 11.001 3.137 1.568 1.568 0 01-.001-3.137zM26.3 9.255a1.57 1.57 0 11.002 3.136 1.57 1.57 0 01-.002-3.136zm0 4.04a1.57 1.57 0 011.571 1.568 1.57 1.57 0 01-3.14 0 1.57 1.57 0 011.569-1.568zm0 4.038a1.571 1.571 0 110 3.14 1.571 1.571 0 010-3.14zm0 4.04a1.57 1.57 0 11.003 3.135 1.57 1.57 0 01-.003-3.135zm-4.037-8.078a1.57 1.57 0 11-.001 3.135 1.57 1.57 0 01.001-3.135zm0 4.038a1.57 1.57 0 010 3.14 1.57 1.57 0 010-3.14z"/>
                     </svg>
                   </div>
+                  <span class="catalog-mainmenu__name catalog-mainmenu__categories-fitness-bracelets" href="#">Фитнес-браслеты</span>
                 </a>
-                <a class="catalog-mainmenu__name catalog-mainmenu__categories-fitness-bracelets" href="#">Фитнес-браслеты</a>
               </li>
               <!--Умные часы-->
               <li class="catalog-mainmenu__item">
@@ -259,8 +277,8 @@
                       <path d="M54.494 32.197h-1.515v-4.64c0-5.052-4.087-9.186-9.082-9.186H9.082C4.086 18.372 0 22.505 0 27.557v42.868c0 5.052 4.087 9.185 9.083 9.185h34.815c4.995 0 9.082-4.133 9.082-9.185V67.01h1.515a.764.764 0 00.757-.764V52.467a.765.765 0 00-.757-.766H52.98v-8.788h1.515c.832 0 1.514-.688 1.514-1.531v-7.654a1.529 1.529 0 00-1.515-1.531zm-20.412-3.109c2.926 0 5.299 2.398 5.299 5.358 0 2.96-2.373 5.358-5.299 5.358s-5.298-2.398-5.298-5.358c0-2.96 2.372-5.358 5.298-5.358zm-15.137 0c2.925 0 5.298 2.398 5.298 5.358 0 2.96-2.373 5.358-5.298 5.358-2.926 0-5.298-2.398-5.298-5.358 0-2.96 2.372-5.358 5.298-5.358zM5.297 49.397c0-2.959 2.371-5.358 5.298-5.358 2.926 0 5.298 2.399 5.298 5.358 0 2.959-2.373 5.358-5.298 5.358-2.927.001-5.298-2.399-5.298-5.358zm13.648 19.497c-2.926 0-5.298-2.398-5.298-5.358 0-2.96 2.372-5.358 5.298-5.358 2.925 0 5.298 2.398 5.298 5.358 0 2.96-2.373 5.358-5.298 5.358zm1.49-19.903c0-3.382 2.711-6.124 6.055-6.124s6.055 2.742 6.055 6.124c0 3.382-2.711 6.124-6.055 6.124-3.344-.001-6.055-2.742-6.055-6.124zm13.647 19.903c-2.926 0-5.298-2.398-5.298-5.358 0-2.96 2.372-5.358 5.298-5.358s5.299 2.398 5.299 5.358c0 2.96-2.373 5.358-5.299 5.358zm8.302-14.138c-2.927 0-5.298-2.399-5.298-5.358 0-2.959 2.371-5.358 5.298-5.358 2.926 0 5.298 2.399 5.298 5.358 0 2.958-2.372 5.358-5.298 5.358zM9.646 15.31h33.687c.843 0 1.432-.681 1.306-1.514L43.023 3.028l-.002-.002C42.771 1.362 41.189 0 39.506 0H13.474c-1.686 0-3.268 1.362-3.517 3.028L8.342 13.795c-.125.833.461 1.515 1.304 1.515zM43.333 82.671H9.646c-.843 0-1.429.683-1.304 1.516l1.615 10.767c.25 1.666 1.832 3.028 3.516 3.028h26.032c1.684 0 3.266-1.362 3.517-3.026v-.002l1.615-10.767c.128-.833-.461-1.516-1.304-1.516z"/>
                     </svg>
                   </div>
+                  <span class="catalog-mainmenu__name" href="#">Умные часы</span>
                 </a>
-                <a class="catalog-mainmenu__name" href="#">Умные часы</a>
               </li>
               <!--Квадрокоптеры-->
               <li class="catalog-mainmenu__item">
@@ -271,8 +289,8 @@
                       <path d="M63.794 44.438c-2.036.925-3.507 3.649-3.069 5.73.774 3.677 4.824 5.553 7.996 3.702 1.985-1.158 2.991-3.547 2.451-5.783-.568-2.39-2.734-4.138-5.16-4.138-.645 0-1.625.232-2.218.489zM36.092.154c-3.92.668-4.513 1.131-4.513 3.444 0 1.825.463 2.416 2.268 2.956 1.55.462 7.172.514 10.5.128 6.86-.822 11.322-2.544 9.698-3.752-1.265-.9-4.902-1.876-9.054-2.39-2.475-.308-7.996-.54-8.9-.386zM89.484.258C83.165.848 77.62 2.339 77.62 3.444c0 1.722 7.84 3.47 15.63 3.495 5.804 0 7.196-.642 7.196-3.34 0-1.825-.619-2.622-2.373-3.085C96.423.103 92.398 0 89.484.258zM112.777.283c-1.781.231-3.019.77-3.431 1.491-.387.77-.31 2.904.154 3.572.928 1.31 1.652 1.465 7.069 1.465 3.661 0 5.801-.129 7.866-.488 3.534-.592 6.603-1.517 7.248-2.237.49-.54.49-.54-.233-1.156-1.34-1.13-5.958-2.185-11.916-2.672-3.481-.283-4.488-.283-6.757.025z"/>
                     </svg>
                   </div>
+                  <span class="catalog-mainmenu__name" href="#">Квадрокоптеры</span>
                 </a>
-                <a class="catalog-mainmenu__name" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </div>
@@ -322,6 +340,7 @@
         <!---->
         <!--===Партнеры===-->
         <section class="partners">
+          <h2 class="visually-hidden">Наши партнеры</h2>
           <div class="container">
           <ul class="partners__list">
             <li class="partners__item">
@@ -373,8 +392,8 @@
           <div class="footer__top">
             <!--Логотип сайта-->
             <div class="footer__logo">
-              <a href="#" aria-label="DEVISE - Интернет-магазин гаджетов и аксессуаров">
-                <svg class="footer__icon-logo" width="163" height="35" role="img" viewBox="0 0 163 35" xmlns="http://www.w3.org/2000/svg">
+              <a class="footer__icon-logo" href="#" aria-label="DEVISE - Интернет-магазин гаджетов и аксессуаров">
+                <svg width="163" height="35" role="img" viewBox="0 0 163 35" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-logo">
                   </use>
                 </svg>
@@ -470,39 +489,40 @@
         </div>
       </footer>
       <!--===Модальное окно обратной связи===-->
-      <section class="modal__feedback">
+      <section class="modal-feedback">
         <h2 class="visually-hidden">Всплывающее окно обратной связи</h2>
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
-          <ul class="modal__form-list">
-            <li class="modal__form-item">
-              <label class="modal__form-label" for="name">Ваше имя:</label>
-              <input class="modal__form-input" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+        <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+          <ul class="modal-feedback__form__list">
+            <li class="modal-feedback__form__item">
+              <label class="modal-feedback__form__label" for="name">Ваше имя:</label>
+              <input class="modal-feedback__form__input" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
             </li>
-            <li class="modal__form-item">
-              <label class="modal__form-label" for="email">Ваш e-mail:</label>
-              <input class="modal__form-input" type="email" name="email" id="email" placeholder="email@example.com" required>
+            <li class="modal-feedback__form__item">
+              <label class="modal-feedback__form__label" for="email">Ваш e-mail:</label>
+              <input class="modal-feedback__form__input" type="email" name="email" id="email" placeholder="email@example.com" required>
             </li>
-            <li class="modal__form-item modal__form-item-text">
-              <label class="modal__form-label" for="comment">Текст письма:</label>
-              <textarea class="modal__form-input modal__form-input-comment" name="comment" id="comment" cols="86" rows="8" placeholder="В свободной форме" required></textarea>
+            <li class="modal-feedback__form__item modal-feedback__form__item-text">
+              <label class="modal-feedback__form__label" for="comment">Текст письма:</label>
+              <textarea class="modal-feedback__form__input modal-feedback__form__input-comment" name="comment" id="comment" cols="86" rows="8" placeholder="В свободной форме" required></textarea>
             </li>
           </ul>
-          <button class="button modal__feedback-button" type="submit">Отправить</button>
+          <button class="button modal-feedback__button" type="submit">Отправить</button>
         </form>
-        <button class="modal__close">
+        <button class="modal-close">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </section>
       <!--===Модальное окно - карта===-->
-      <section class="modal__map">
+      <section class="modal-map">
         <h2 class="visually-hidden">Всплывающее окно с картой</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1561543292747!5m2!1sru!2sru"
         width="960" height="559" allowfullscreen></iframe>
-        <img src="img/map-big.jpg" width="960" height="559" alt="Карта с местонахождением магазина">
-        <button class="modal__close">
+        <img src="img/map-big.jpg" width="960" height="559" alt="Адрес на карте - город Москва, улица Строителей, 15">
+        <button class="modal-close">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </section>
-    <script src="js/script.js"></script>
+    <!--<script src="js/script.js"></script>-->
+    <script src="js/script.min.js"></script>
   </body>
 </html>

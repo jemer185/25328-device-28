@@ -15,8 +15,8 @@
     <header class="header">
       <div class="containers">
         <!--Логотип сайта-->
-        <a class="header__link" href="index.html" aria-label="Логотип DEVISE">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon-logo" width="163" height="35" role="img" viewBox="0 0 163 35">
+        <a class="icon-logo" href="index.html" aria-label="Логотип DEVISE">
+          <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" role="img" viewBox="0 0 163 35">
             <g id="icon-logo">
               <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
             </g>
@@ -67,31 +67,49 @@
           <!--Навигация по сайту-->
           <ul class="site-nav">
             <li class="site-nav__item site-nav__item-catalog">
-              <a class="site-nav__link site-nav__link-catalog site-nav__link-letter-spacing" href="monopods-for-selfie.html" aria-label="Каталог товаров с кнопкой вызова подменю">Каталог товаров</a>
-              <button class="catalog-button" aria-label="Кнопка вызова подменю"></button>
-                <ul class="site-nav__sublist">
-                  <li class="site-nav__sublist-item">
-                    <a class="site-nav__sublist-link" href="#" aria-label="Раздел - виртуальная реальность">Виртуальная реальность</a>
-                    <a class="site-nav__sublist-link" href="#" aria-label="Раздел - моноподы для селфи">Моноподы для селфи</a>
-                    <a class="site-nav__sublist-link" href="#" aria-label="Раздел - экшн-камеры">Экшн-камеры</a>
-                  </li>
-                  <li class="site-nav__sublist-item">
-                    <a class="site-nav__sublist-link" href="#" aria-label="Раздел - фитнес-браслеты">Фитнес-браслеты</a>
-                    <a class="site-nav__sublist-link" href="#" aria-label="Раздел - умные часы">Умные часы</a>
-                  </li>
-                  <li class="site-nav__sublist-item">
-                    <a class="site-nav__sublist-link" href="#" aria-label="Раздел - квадрокоптеры">Квадрокоптеры</a>
-                  </li>
-                </ul>
+              <a class="site-nav__link site-nav__link-catalog site-nav__link-letter-spacing" href="#" aria-label="Каталог товаров с кнопкой вызова подменю">Каталог товаров</a>
+              <button class="catalog-button" type="button" aria-label="Кнопка вызова подменю"></button>
+              <ul class="site-nav__sublist">
+                <li  class="site-nav__sublist-item">
+                  <ul>
+                    <li>
+                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - виртуальная реальность">Виртуальная реальность</a>
+                    </li>
+                    <li>
+                      <a class="site-nav__sublist-link link-disabled" aria-label="Раздел - моноподы для селфи">Моноподы для селфи</a>
+                    </li>
+                    <li>
+                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - экшн-камеры">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="site-nav__sublist-item">
+                  <ul>
+                    <li>
+                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - фитнес-браслеты">Фитнес-браслеты</a>
+                    </li>
+                    <li>
+                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - умные часы">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="site-nav__sublist-item">
+                  <ul>
+                    <li>
+                      <a class="site-nav__sublist-link" href="#" aria-label="Раздел - квадрокоптеры">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="index.html#services" aria-label="Доставка товара">Доставка</a>
+              <a class="site-nav__link" href="#services" aria-label="Доставка товара">Доставка</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="index.html#services" aria-label="Гарантия на товар">Гарантия</a>
+              <a class="site-nav__link" href="#services" aria-label="Гарантия на товар">Гарантия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="index.html#contacts" aria-label="Как найти и связаться с нами">Контакты</a>
+              <a class="site-nav__link" href="#contacts" aria-label="Как найти и связаться с нами">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -109,36 +127,36 @@
             <a href="#" aria-label="Переход на страницу каталог товаров">Каталог товаров</a>
           </li>
           <li>
-            <a href="#" class="link-disabled" aria-label="Переход на страницу моноподы для селфи (не можно нажать)">Моноподы для селфи</a>
+            <a class="link-disabled" aria-label="Переход на страницу моноподы для селфи (Выбрано, не можно нажать)">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
       <!--===Шапка Каталога===-->
       <div class="catalog-header">
         <div class="container">
-          <div class="filter__header">
+          <div class="catalog-header__filter-header">
             <h2>Фильтр:</h2>
           </div>
           <!---->
-          <div class="sorting__header">
+          <div class="catalog-header__sorting-header">
             <h2>Сортировка:</h2>
-            <ul class="sorting__list">
+            <ul class="catalog-header__sorting-header__list">
               <li>
-                <a class="sorting__link sorting__link-current" href="#" aria-label="Сортировка по цене (Выбрано - не можно нажать)">По цене</a>
+                <a class="catalog-header__sorting-header__link catalog-header__sorting-header__link-current" href="#" aria-label="Сортировка по цене (Выбрано - не можно нажать)">По цене</a>
               </li>
               <li>
-                <a class="sorting__link" href="#" aria-label="Сортировка по типу">По типу</a>
+                <a class="catalog-header__sorting-header__link" href="#" aria-label="Сортировка по типу">По типу</a>
               </li>
               <li>
-                <a class="sorting__link" href="#" aria-label="Сортировка по популярности">По популярности</a>
+                <a class="catalog-header__sorting-header__link" href="#" aria-label="Сортировка по популярности">По популярности</a>
               </li>
             </ul>
-            <ul class="sorting__list sorting__list-up-down">
+            <ul class="catalog-header__sorting-header__list catalog-header__sorting-header__list-up-down">
               <li>
-                <a class="sorting__link sorting__link-up" href="#" aria-label="Сортировка по возростанию"></a>
+                <a class="catalog-header__sorting-header__link catalog-header__sorting-header__link-up" href="#" aria-label="Сортировка по возростанию"></a>
               </li>
               <li>
-                <a class="sorting__link sorting__link-down sorting__link-current" href="#" aria-label="Сортировка по убыванию (Выбрано, не можно нажать)"></a>
+                <a class="catalog-header__sorting-header__link catalog-header__sorting-header__link-down catalog-header__sorting-header__link-current" href="#" aria-label="Сортировка по убыванию (Выбрано, не можно нажать)"></a>
               </li>
             </ul>
           </div>
@@ -156,8 +174,8 @@
                 <div class="filter__price__range">
                   <div class="scale">
                     <div class="bar"></div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
+                    <div class="range-toggle range-toggle-min" tabindex="0"></div>
+                    <div class="range-toggle range-toggle-max" tabindex="0"></div>
                   </div>
                   <div class="price__values">
                     <label class="price__label">
@@ -214,68 +232,69 @@
           </aside>
           <!--===Карточки товаров===-->
           <section class="sorting">
+            <h2 class="visually-hidden">Карточки товаров</h2>
             <ul class="catalog-list">
               <!--Карточка 1-->
               <li class="catalog-item">
-                <div class="device__photo">
-                  <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <div class="device__photo-hover">
-                    <a class="button device__photo-button" href="#">В корзину</a>
-                    <a class="device__photo-link" href="#">Добавить к сравнению</a>
+                <div class="device-photo">
+                  <img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <div class="device-photo__hover">
+                    <a class="button device-photo__button" href="#">В корзину</a>
+                    <a class="device-photo__link" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
-                <div class="device__info">
-                  <a class="device__name device__name-padding" href="#">Любительская селфи-палка</a>
-                  <span class="device__price device__price__margin">500 руб.</span>
+                <div class="device-info">
+                  <a class="device-name device-name-padding" href="#">Любительская селфи-палка</a>
+                  <span class="device-price device-price__margin">500 руб.</span>
                 </div>
               </li>
               <!--Карточка 2-->
               <li class="catalog-item">
-                <div class="device__photo">
-                  <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  <div class="device__photo-hover">
-                    <a class="button  device__photo-button" href="#">В корзину</a>
-                    <a class="device__photo-link" href="#">Добавить к сравнению</a>
+                <div class="device-photo">
+                  <img src="img/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                  <div class="device-photo__hover">
+                    <a class="button  device-photo__button" href="#">В корзину</a>
+                    <a class="device-photo__link" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
-                <div class="device__info">
-                  <a class="device__name" href="#">Профессиональная<br> селфи-палка</a><!--&nbsp;-&nbsp;-->
-                  <span class="device__price device__price__margin-minus">1 500 руб.</span>
+                <div class="device-info">
+                  <a class="device-name" href="#">Профессиональная<br> селфи-палка</a><!--&nbsp;-&nbsp;-->
+                  <span class="device-price device-price__margin-minus">1 500 руб.</span>
                 </div>
               </li>
               <!--Карточка 3-->
               <li class="catalog-item">
-                <div class="device__photo">
-                  <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  <div class="device__photo-hover">
-                    <a class="button  device__photo-button" href="#">В корзину</a>
-                    <a class="device__photo-link" href="#">Добавить к сравнению</a>
+                <div class="device-photo">
+                  <img src="img/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  <div class="device-photo__hover">
+                    <a class="button  device-photo__button" href="#">В корзину</a>
+                    <a class="device-photo__link" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
-                <div class="device__info">
-                  <a class="device__name device__name-padding" href="#">Непотопляемая селфи-палка</a>
-                  <span class="device__price device__price__margin-min">2 500 руб.</span>
+                <div class="device-info">
+                  <a class="device-name device-name-padding" href="#">Непотопляемая селфи-палка</a>
+                  <span class="device-price device-price__margin-min">2 500 руб.</span>
                 </div>
               </li>
               <!--Карточка 4-->
               <li class="catalog-item catalog-item-new">
-                <div class="device__photo">
-                  <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                  <div class="device__photo-hover">
-                    <a class="button device__photo-button" href="#">В корзину</a>
-                    <a class="device__photo-link" href="#">Добавить к сравнению</a>
+                <div class="device-photo">
+                  <img src="img/selfie-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                  <div class="device-photo__hover">
+                    <a class="button device-photo__button" href="#">В корзину</a>
+                    <a class="device-photo__link" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
-                <div class="device__info">
-                  <a class="device__name" href="#">Селфи-палка «Следуй за мной»</a>
-                  <span class="device__price device__price__margin-min">4 900 руб.</span>
+                <div class="device-info">
+                  <a class="device-name" href="#">Селфи-палка «Следуй за мной»</a>
+                  <span class="device-price device-price__margin-min">4 900 руб.</span>
                 </div>
               </li>
             </ul>
             <!--===Пагинатор===-->
             <ul class="paginator">
               <li class="paginator__item">
-                <a class="paginator__link paginator__link-prev paginator__link-prev-disabled" href="#" aria-label="Предыдущая страница (Выбрано, не можно нажать)">Назад</a>
+                <a class="paginator__link paginator__link-prev paginator__link-prev-disabled" aria-label="Предыдущая страница (Выбрано, не можно нажать)">Назад</a>
               </li>
               <li class="paginator__item">
                 <a class="paginator__link paginator__link-current" href="#" aria-label="Страница - 1">1</a>
@@ -300,8 +319,8 @@
         <div class="footer__top">
           <!--Логотип сайта-->
           <div class="footer__logo">
-            <a href="index.html" aria-label="Логотип DEVISE">
-              <svg class="footer__icon-logo" width="163" height="35" role="img" viewBox="0 0 163 35">
+            <a class="footer__icon-logo" href="index.html" aria-label="Логотип DEVISE">
+              <svg width="163" height="35" role="img" viewBox="0 0 163 35">
                 <use xlink:href="#icon-logo">
                 </use>
               </svg>
@@ -397,8 +416,7 @@
         </div>
       </div>
     </footer>
-
-    <script src="js/script.js"></script>
-
+    <!--<script src="js/script.js"></script>-->
+    <script src="js/script.min.js"></script>
   </body>
 </html>
